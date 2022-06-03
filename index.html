@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Carrito de Compras</title>  
+</head>
+
+<body>
+  <header>
+    <img class = "logo" src="../img/logo.jpeg" alt="logo">
+  <!-- <h1 id="titulo" class="titulo">NFT</h1> -->
+  <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+</header>
+
+<select id="filtroautor">
+<option value="all">Todos</option>
+<option value="Rels">Rels</option>
+<option value="Blor">Blor</option>
+<option value="Mr.s">Mr.s</option>
+</select>
+
+<select name="" id="filterXprice">
+  <option value="">select filter</option>
+  <option value="Menor a 1101">Menor a 1101</option>
+  <option value="Entre 1102 y 1200">Entre 1102 y 1200</option>
+  <option value="Mayor a 1200">Mayor a 1200</option>
+</select>
+
+<main id="contenedor-productos">
+
+</main>
+
+<div class="modal-contenedor">
+  <div class="modal-carrito">
+    <h3>Carrito</h3>
+    <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+<div id="carrito-contenedor">
+  <!-- <div class="productoEnCarrito">
+    <p>Buzo 1</p>
+    <p>Precio: $1200</p>
+    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+  </div> -->
+</div>
+<p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+<button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+</div>
+</div>
+<script src="stock.js"></script>
+<script src="app.js"></script>
+<script src="modal.js"></script>
+</body>
+</html>
